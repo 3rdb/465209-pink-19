@@ -32,8 +32,8 @@
       <h1 class="header-title">Фотографии пользователей</h1>
     </div>
   </header>
-  <main class="page-main">
-      <p class="page-main-description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+  <main class="page-content">
+      <p class="page-content__description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
       <section class="gallery">
         <article class="gallery-item gallery-item--panorama">
             <img src="https://via.placeholder.com/150x150" alt="Вид с фуникулера на горы">
@@ -140,6 +140,21 @@
               </div>
           </div>
         </article>
+    </section>
+    <section class="userpost">
+      <div class="userpost-header">
+        <h3 class="userpost-header__title">Затмите их всех!</h3>
+        <p class="userpost-header__text">Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+      <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Фото зимней дороги">
+      <div class="userpost-options">
+        <button type="button" class="userpost-options__item userpost-options__item--crop userpost-options__item--active"></button>
+        <button type="button" class="userpost-options__item userpost-options__item--fill"></button>
+        <button type="button" class="userpost-options__item userpost-options__item--contrast"></button>
+        <div class="userpost-options__range"></div>
+        <button type="button" name="button" class="button userpost-options__button">Запостить</button>
+        <button type="button" name="button" class="button userpost-options__button userpost-options__button--disabled" disabled>Отмена</button>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
