@@ -1,3 +1,15 @@
+.nav-list {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .nav-list {
+    min-width: 100%;
+  }
+}
+
 .nav-list__item {
   .no-list();
 }
@@ -9,4 +21,5 @@
   line-height: 32px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
 }

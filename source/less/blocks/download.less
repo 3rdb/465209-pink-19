@@ -1,5 +1,24 @@
 .download {
+  display: flex;
+  flex-direction: column;
   background-color: #1d2631;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    width: 100%;
+  }
 }
 
 .download__wrapper {
@@ -14,17 +33,27 @@
 }
 
 .download__button {
+  border-radius: 30px;
   border: 3px solid #ffffff;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .download__list {
   .no-list();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .download__wrapper--tablet {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .download__description {
