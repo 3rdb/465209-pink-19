@@ -1,29 +1,40 @@
 .download {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   background-color: #1d2631;
   margin: 0 auto;
   min-width: 320px;
-}
 
-@media (min-width: @tablet-width) {
-  .download {
-    display: flex;
-    flex-direction: row-reverse;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 400px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
-@media (min-width: @desktop-width) {
-  .download {
-    width: 100%;
+.download__image {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
   }
 }
 
 .download__wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: none;
+  }
 }
 
 .download__title {
@@ -47,13 +58,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (min-width: @tablet-width) {
-  .download__wrapper--tablet {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .download__description {
