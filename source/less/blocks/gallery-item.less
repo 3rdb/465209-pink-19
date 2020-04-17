@@ -3,6 +3,17 @@
   color: #283645;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  &--panorama {
+    flex-grow: 1;
+    width: 700px;
+  }
 }
 
 .gallery-item__name {

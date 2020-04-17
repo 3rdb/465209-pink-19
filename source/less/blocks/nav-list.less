@@ -1,5 +1,10 @@
-.nav-list__item {
+.nav-list {
   .no-list();
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 100%;
+  }
 }
 
 .nav-list__link {
@@ -9,4 +14,5 @@
   line-height: 32px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
 }

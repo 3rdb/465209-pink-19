@@ -1,6 +1,17 @@
 .offers-list {
   .no-list();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f2f2f2;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.offers-list__item {
+  text-align: center;
 }
 
 .offers-list__slogan {
