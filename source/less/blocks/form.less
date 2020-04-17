@@ -1,5 +1,70 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__fieldset:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+.form__fieldset {
+  @media (min-width: @tablet-width) {
+    &--fullname {
+      order: 1;
+    }
+
+    &--achivment {
+      order: 4;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--app {
+      order: 2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--fullname {
+      width: 600px;
+    }
+
+    &--achivment {
+      width: 100%;
+    }
+
+    &--contacts {
+      width: 100%;
+    }
+
+    &--app {
+      width: 600px;
+    }
+  }
+}
+
+.form__block {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    &--emotions {
+      order: 5;
+    }
+
+    &--sent {
+      order: 6;
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--emotions {
+      width: 100%;
+    }
+  }
 }
 
 .form__legend {
@@ -15,7 +80,12 @@
 
 .form__field {
   font-size: 18px;
+
+  &--textarea {
+    width: 100%;
+  }
 }
+
 
 .form__options-list {
   .no-list();
