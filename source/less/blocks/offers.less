@@ -7,6 +7,11 @@
     display: flex;
     flex-direction: row-reverse;
   }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .offers__header {
@@ -21,4 +26,20 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+}
+
+.offers__img {
+  display: flex;
+}
+
+.offers__img-item {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.offers__img-item--show {
+  display: block;
 }
