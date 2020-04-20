@@ -8,11 +8,18 @@
     width: 300px;
     margin-right: 20px;
     margin-bottom: 20px;
+
+    &--panorama {
+      flex-grow: 1;
+      width: 700px;
+    }
   }
 
-  &--panorama {
-    flex-grow: 1;
-    width: 700px;
+  @media (min-width: @desktop-width) {
+    &--panorama {
+      flex-grow: 1;
+      width: 1200px;
+    }
   }
 }
 

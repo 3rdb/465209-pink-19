@@ -45,7 +45,7 @@
     <div class="contest-content__form">
       <p class="page-content__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--fullname">
         <div class="form__block">
           <label class="form__label" for="surname">Фамилия:</label>
           <input class="form__field" type="text" name="form-surname" required placeholder="Укажите фамилию *" id="surname">
@@ -59,7 +59,7 @@
           <input class="form__field" type="text" name="form-middle_name" placeholder="Ну и отчество тоже" id="middle_name">
         </div>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--achivment">
         <div class="form__legend">Ваши безбашенные достижения в путешествии</div>
         <ul class="form__options-list">
           <li class="form__options-list__item">
@@ -88,7 +88,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--contacts">
         <div class="form__block">
           <label class="form__label" for="telephone">Номер телефона</label>
           <input class="form__field" type="tel" name="signature-telephone" placeholder="Номер, пожалуйста" id="telephone">
@@ -98,7 +98,7 @@
           <input class="form__field" type="email" name="signature-email" required placeholder="Введите почту *" id="email">
         </div>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--app">
         <div class="form__legend">С каким приложением путешествовали?</div>
           <ul class="form__options-list">
             <li class="form__options-list__item">
@@ -115,13 +115,13 @@
             </li>
           </ul>
       </fieldset>
-        <div class="form__block">
+        <div class="form__block form__block--emotions">
           <fieldset class="form__fieldset">
             <div class="form__legend">Опишите свои эмоции</div>
             <textarea class="form__field form__field--textarea" name="message" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
         </div>
-        <div class="form__block">
+        <div class="form__block form__block--sent">
           <button class="form__button" type="submit">Отправить форму</button>
           <div class="form__notice"><sup>*</sup>- обязательные поля</div>
         </div>
