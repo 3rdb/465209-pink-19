@@ -17,7 +17,42 @@
   }
 }
 
+.page-footer__logo {
+  margin-bottom: 55px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 14px;
+    margin-bottom: 31px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 131px;
+  }
+}
+
 .page-footer__social {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 135px;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 130px;
+  }
 }

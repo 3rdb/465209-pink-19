@@ -1,9 +1,46 @@
 .main-nav {
-  background-color: #1d2631;
+  background-color: #283645;
   min-width: 320px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 110px;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin-left: auto;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    top: 45px;
+    right: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -11,5 +48,6 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 }
