@@ -9,5 +9,21 @@
 }
 
 .page-content__description {
+  padding-left: 37px;
+  padding-right: 40px;
+  margin-top: 45px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-top: 90px;
+    padding-left: 91px;
+    padding-right: 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 630px;
+    margin-left: 194px;
+    margin-top: 93px;
+  }
 }

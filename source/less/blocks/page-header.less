@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 320px;
@@ -8,10 +9,29 @@
   }
 
   @media (min-width: @desktop-width) {
+    position: relative;
     min-width: 1200px;
   }
 }
 
 .page-header__logo {
   background-color: #283645;
+  min-height: 69px;
+  box-sizing: border-box;
+
+  svg {
+    padding-left: 21px;
+    padding-top: 21px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    min-height: 40px;
+  }
 }
