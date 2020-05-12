@@ -14,8 +14,8 @@
 
 .nav-list__item {
   border-top: 1px solid black;
-  min-height: 64px;
   padding-top: 17px;
+  padding-bottom: 14px;
   box-sizing: border-box;
 
   &:last-child {
@@ -23,6 +23,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0;
     border: none;
 
     &:last-child {
@@ -44,6 +45,5 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
-    padding-left: 19px;
   }
 }
