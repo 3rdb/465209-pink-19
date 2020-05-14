@@ -229,12 +229,25 @@
         <p class="userpost-header__title">Затмите их всех!</p>
         <p class="userpost-header__text">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <img class="page-footer__logo-image" src="img/photo-road-mobile@1x.jpg" alt="Фото зимней дороги">
+      <div class="userpost__wrapper">
+        <img class="userpost__image" src="img/photo-road-mobile@1x.jpg" alt="Фото зимней дороги">
+      </div>
       <div class="userpost-options">
-        <button type="button" class="userpost-options__item userpost-options__item--crop userpost-options__item--active"></button>
-        <button type="button" class="userpost-options__item userpost-options__item--fill"></button>
-        <button type="button" class="userpost-options__item userpost-options__item--contrast"></button>
-        <div class="userpost-options__range"></div>
+        <div class="userpost-options__container">
+          <div class="userpost-options__wrapper-editor">
+            <button type="button" class="userpost-options__item userpost-options__item--crop userpost-options__item--active"></button>
+            <div class="userpost-options__range userpost-options__range--crop"></div>
+          </div>
+          <div class="userpost-options__wrapper-editor">
+            <button type="button" class="userpost-options__item userpost-options__item--fill"></button>
+            <div class="userpost-options__range userpost-options__range--fill"></div>
+          </div>
+          <div class="userpost-options__wrapper-editor">
+            <button type="button" class="userpost-options__item userpost-options__item--contrast"></button>
+            <div class="userpost-options__range userpost-options__range--contrast"></div>
+          </div>
+        </div>
+        <div class="userpost-options__range userpost-options__range--mobile"></div>
         <div class="userpost-options__wrapper">
           <button type="button" class="button userpost-options__button">Запостить</button>
           <button type="button" class="button userpost-options__button userpost-options__button--disabled" disabled>Отмена</button>
