@@ -1,5 +1,33 @@
 .contacts-header {
+  padding-top: 28px;
+  padding-bottom: 28px;
   color: #283645;
   font-size: 24px;
   font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    max-width: 370px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 470px;
+    margin: 0 auto;
+    padding-top: 61px;
+    padding-bottom: 38px;
+  }
+}
+
+.contacts-header__title {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-bottom: 29px;
+    font-size: 50px;
+  }
 }

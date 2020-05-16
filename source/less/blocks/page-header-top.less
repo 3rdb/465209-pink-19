@@ -1,0 +1,18 @@
+.page-header-top {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.page-header-top__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 110px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}

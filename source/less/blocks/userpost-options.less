@@ -1,11 +1,135 @@
 .userpost-options {
+  text-align: center;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
   }
 }
 
+.userpost-options__item {
+  border: 0;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--contrast {
+    background-image: url("../../img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.userpost-options__container {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .userpost-options__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.userpost-options__wrapper-editor {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.userpost-options__range {
+  display: none;
+  position: relative;
+  width: 280px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  &--mobile {
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    width: 280px;
+    height: 2px;
+    background: #283645;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    left: 70%;
+    background: #f2f2f2;
+    z-index: 2;
+  }
+
+  &--fill::before {
+    left: 30%;
+  }
+
+  &--contrast::before {
+    left: 50%;
+  }
+}
+
+.userpost-options__button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 15px 35px;
+  margin-top: 25px;
+  color: #d22856;
+  background-color: transparent;
+  border: 3px solid #d22856;
+  border-radius: 30px;
+
+  &--disabled {
+    color: #283645;
+    border-color: #283645;
+    opacity: 0.1;
+  }
 }

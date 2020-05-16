@@ -2,15 +2,10 @@
   background-color: #283645;
   min-width: 320px;
 
-  @media (min-width: @tablet-width) {
-    width: 100%;
-  }
-
   @media (min-width: @desktop-width) {
-    min-height: 110px;
-    position: absolute;
-    z-index: 1;
     background: transparent;
+    max-width: 640px;
+    width: 100%;
   }
 }
 
@@ -18,8 +13,6 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 620px;
-    margin-left: auto;
   }
 }
 
@@ -49,5 +42,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 }
