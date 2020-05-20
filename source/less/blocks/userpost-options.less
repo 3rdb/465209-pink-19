@@ -1,9 +1,17 @@
 .userpost-options {
   text-align: center;
+  margin-top: 30px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    margin-left: 16px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 466px;
+    width: 100%;
   }
 }
 
@@ -14,40 +22,116 @@
   background-color: transparent;
   cursor: pointer;
 
+  svg {
+    fill: #d22856;
+  }
+
   &--crop {
-    background-image: url("../img/icon-editor-crop.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    border: 0;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      svg {
+        width: 44px;
+        height: 44px;
+      }
+    }
   }
 
   &--fill {
-    background-image: url("../img/icon-editor-fill.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    border: 0;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      svg {
+        width: 48px;
+        height: 43px;
+      }
+    }
   }
 
   &--contrast {
-    background-image: url("../../img/icon-editor-contrast.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    border: 0;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 }
 
 .userpost-options__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 213px;
+  margin: 0 auto;
+  margin-left: 48px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    min-height: 192px;
+    margin-top: 53px;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
   }
 }
 
 .userpost-options__wrapper {
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 53px;
+    margin-left: 20px;
+    padding-bottom: 0;
+  }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    min-width: 417px;
+    justify-content: space-between;
+    margin-left: 65px;
+    margin-top: 133px;
   }
 }
 
@@ -55,21 +139,31 @@
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
+    min-width: 270px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 465px;
   }
 }
 
 .userpost-options__range {
   display: none;
   position: relative;
-  width: 280px;
+  width: 240px;
   height: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 
   @media (min-width: @tablet-width) {
     display: block;
     margin-bottom: 0;
+    width: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 320px;
   }
 
   &--mobile {
@@ -85,10 +179,18 @@
     display: block;
     position: absolute;
     top: 6px;
-    width: 280px;
+    width: 240px;
     height: 2px;
     background: #283645;
     z-index: 1;
+
+    @media (min-width: @tablet-width) {
+      width: 203px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 288px;
+    }
   }
 
   &::before {
@@ -99,13 +201,25 @@
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    left: 70%;
+    left: 80%;
     background: #f2f2f2;
     z-index: 2;
+
+    @media (min-width: @tablet-width) {
+      left: 77%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 22%;
+    }
   }
 
   &--fill::before {
-    left: 30%;
+    left: 13%;
+
+    @media (min-width: @desktop-width) {
+      left: 77%;
+    }
   }
 
   &--contrast::before {
@@ -121,11 +235,22 @@
   line-height: 18px;
   font-weight: bold;
   padding: 15px 35px;
-  margin-top: 25px;
+  margin-top: 15px;
   color: #d22856;
   background-color: transparent;
   border: 3px solid #d22856;
   border-radius: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 180px;
+  }
 
   &--disabled {
     color: #283645;

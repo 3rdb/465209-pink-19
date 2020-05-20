@@ -4,12 +4,37 @@
   color: #283645;
   font-size: 14px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 46px;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 7px;
+    padding-bottom: 65px;
+  }
 }
 
 .userpost-header__title {
   text-align: center;
+  margin: 0;
+  margin-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin: 0;
+  }
 }
 
 .userpost-header__text {
   text-align: center;
+  margin: 0;
+  padding-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 0;
+  }
 }

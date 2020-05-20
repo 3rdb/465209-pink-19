@@ -1,49 +1,76 @@
 .effects {
   display: none;
-  line-height: 10px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    margin: 0 auto;
+    display: block;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    padding-bottom: 62px;
     background-color: #f2f2f2;
+    padding-bottom: 67px;
   }
 }
 
+.effects__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .effects__img {
-  @media (min-width: @tablet-width) {
-    margin-top: 43px;
-    margin-left: 40px;
-  }
+  background: url("../img/icon-timer.svg") no-repeat 50% 50%;
+  background-size: contain;
+  height: 276px;
+  width: 238px;
 
   @media (min-width: @desktop-width) {
-    margin-top: 37px;
-    margin-left: 10px;
+    height: 345px;
+    width: 298px;
+  }
+}
+
+.effects__img-text {
+  border: 14px solid #d22856;
+  border-radius: 100%;
+  color: #d22856;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 96px;
+  font-weight: bold;
+  text-align: center;
+  margin: 55px auto 0;
+  /*line-height: (202 - 28) * 1px;*/
+  height: 202px;
+  width: 202px;
+
+  @media (min-width: @desktop-width) {
+    border-width: 17px;
+    font-size: 120px;
+    /*line-height: (253 - 34) * 1px;*/
+    margin-top: 70px;
+    height: 253px;
+    width: 253px;
   }
 }
 
 .effects__wrapper {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 87px;
-    margin-left: 71px;
-  }
+  margin-top: 87px;
+  max-width: 310px;
+  width: 100%;
 
   @media (min-width: @desktop-width) {
-    width: 530px;
+    max-width: 530px;
+    margin-right: 40px;
     margin-top: 122px;
-    margin-left: 67px;
   }
 }
 
 .effects__slogan {
   color: #000000;
+  display: block;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;

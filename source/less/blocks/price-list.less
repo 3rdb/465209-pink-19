@@ -94,3 +94,62 @@
   text-align: center;
   padding-bottom: 55px;
 }
+
+.price .container {
+  padding: 0;
+}
+
+.price-list-table-wrapper {
+  overflow: auto;
+  margin: 30px auto;
+}
+
+.price-list-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.price-list-table__row th:first-child,
+.price-list-table__row td:first-child {
+  @media all and (max-width: 659px) {
+    display: none;
+  }
+}
+
+.price-list-table__th {
+  background: #283645;
+  border: 2px solid #e5e5e5;
+  color: #ffffff;
+  padding: 20px;
+  min-width: 280px;
+}
+
+.price-list-table__td {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  padding: 20px;
+  min-width: 280px;
+}
+
+.price-list-table__td-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-list-table__value {
+  &--no {
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 26px;
+  }
+
+  &--yes {
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 16px;
+  }
+}
