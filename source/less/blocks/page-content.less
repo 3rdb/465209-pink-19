@@ -14,6 +14,13 @@
   margin-top: 45px;
   text-align: center;
 
+  @media (min-width: @desktop-width) {
+    max-width: 571px;
+    margin: 0 auto;
+    margin-top: 93px;
+    padding: 0;
+  }
+
   &--view {
     display: none;
 
@@ -21,6 +28,10 @@
       display: block;
       font-size: 18px;
       margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: inline-block;
     }
   }
 
@@ -34,6 +45,11 @@
       margin-bottom: 0;
       font-size: 18px;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+      max-width: 840px;
+    }
   }
 
   &--gallery {
@@ -43,12 +59,5 @@
       padding-right: 91px;
       font-size: 18px;
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    max-width: 571px;
-    margin: 0 auto;
-    margin-top: 93px;
-    padding: 0;
   }
 }

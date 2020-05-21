@@ -43,14 +43,14 @@
     </header>
     <div class="header-content">
       <div class="container">
-        <h1 class="header-content__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="header-content__title header-content__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </div>
   </div>
   <main class="page-content">
     <div class="container">
       <div class="contest-content__form">
-        <p class="page-content__description page-content__description--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<p class="page-content__description page-content__description--view">Пожалуйста, заполните форму ниже:</p></p>
+        <p class="page-content__description page-content__description--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="page-content__description page-content__description--view">Пожалуйста, заполните форму ниже:</span></p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset form__fieldset--fullname">
           <div class="form__block">
@@ -69,27 +69,27 @@
         <fieldset class="form__fieldset form__fieldset--achivment">
           <div class="form__legend form__legend--achivment">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</div>
           <ul class="form__options-list">
-            <li class="form__options-list__item">
+            <li class="form__options-list__item form__options-list__item--shark">
               <input class="form__checkbox" type="checkbox" name="checklist-shark" checked id="shark">
               <label class="form__label-checkbox" for="shark">Сделал селфи с акулой</label>
             </li>
-            <li class="form__options-list__item">
+            <li class="form__options-list__item form__options-list__item--beach">
               <input class="form__checkbox" type="checkbox" name="checklist-beach" checked id="beach">
               <label class="form__label-checkbox" for="beach">Обгорел на пляже</label>
             </li>
-            <li class="form__options-list__item">
+            <li class="form__options-list__item form__options-list__item--norris">
               <input class="form__checkbox" type="checkbox" name="checklist-norris" id="norris">
               <label class="form__label-checkbox" for="norris">Видел Чака Норриса</label>
             </li>
-            <li class="form__options-list__item">
+            <li class="form__options-list__item form__options-list__item--souvenirs">
               <input class="form__checkbox" type="checkbox" name="checklist-souvenirs" id="souvenirs">
               <label class="form__label-checkbox" for="souvenirs">Накупил сувениров</label>
             </li>
-            <li class="form__options-list__item">
+            <li class="form__options-list__item form__options-list__item--tower">
               <input class="form__checkbox" type="checkbox" name="checklist-tower" checked id="tower">
               <label class="form__label-checkbox" for="tower">Удержал башню</label>
             </li>
-            <li class="form__options-list__item">
+            <li class="form__options-list__item form__options-list__item--hotel">
               <input class="form__checkbox " type="checkbox" name="checklist-hotel" id="hotel">
               <label class="form__label-checkbox" for="hotel">Разгромил отель</label>
             </li>
@@ -97,13 +97,15 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--contacts">
           <div class="form__legend form__legend--contacts">Контактная информация</div>
-          <div class="form__block form__block--contacts">
-            <label class="form__label form__label--contacts" for="telephone">Номер телефона</label>
-            <input class="form__field form__field--contacts" type="tel" name="signature-telephone" placeholder="Номер, пожалуйста" id="telephone">
-          </div>
-          <div class="form__block form__block--contacts">
-            <label class="form__label form__label--contacts" for="email">Адрес почты</label>
-            <input class="form__field form__field--contacts" type="email" name="signature-email" required placeholder="Введите почту *" id="email">
+          <div class="form__group-wrapper">
+            <div class="form__block form__block--contacts">
+              <label class="form__label form__label--contacts" for="telephone">Номер телефона</label>
+              <input class="form__field form__field--contacts" type="tel" name="signature-telephone" placeholder="Номер, пожалуйста" id="telephone">
+            </div>
+            <div class="form__block form__block--contacts">
+              <label class="form__label form__label--contacts" for="email">Адрес почты</label>
+              <input class="form__field form__field--contacts" type="email" name="signature-email" required placeholder="Введите почту *" id="email">
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--app">
@@ -131,7 +133,7 @@
           </div>
           <div class="form__block form__block--sent">
             <button class="form__button" type="submit">Отправить форму</button>
-            <div class="form__notice"><sup>* </sup>&mdash; обязательные поля</div>
+            <div class="form__notice"><sup>* </sup>&mdash; обязательные <span class="form__notice form__notice--view">для заполнения</span> поля</div>
           </div>
         </form>
         <div class="popup popup--error">

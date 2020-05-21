@@ -6,6 +6,21 @@
   @media (min-width: @tablet-width) {
     margin-top: 72px;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 81px;
+  }
+}
+
+.form__group-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 860px;
+  }
 }
 
 .form__fieldset:nth-child(even) {
@@ -63,20 +78,28 @@
   }
 
   @media (min-width: @desktop-width) {
+    min-width: 100%;
+
     &--fullname {
-      width: 600px;
+      min-width: 434px;
+      margin: 0;
+      margin-top: 4px;
     }
 
     &--achivment {
-      width: 100%;
+      min-width: 940px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
     }
 
     &--contacts {
       width: 100%;
+      min-width: 940px;
     }
 
     &--app {
-      width: 600px;
+      min-width: 434px;
+      margin-left: auto;
     }
   }
 }
@@ -119,8 +142,22 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 53px;
+
     &--emotions {
       width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &--contacts {
+      min-width: 445px;
+      margin-top: 22px;
+      margin-bottom: 0;
+    }
+
+    &--sent {
+      min-width: 100%;
+      margin-bottom: 8px;
     }
   }
 }
@@ -171,7 +208,7 @@
     z-index: 2;
     bottom: 10px;
     margin: 0 auto;
-    max-width: 350px;
+    max-width: auto;
   }
 }
 
@@ -188,6 +225,15 @@
       min-width: 500px;
       margin-top: 8px;
       margin-left: 40px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--contacts {
+      min-width: 350px;
+      margin-top: 10px;
+      margin-left: 12px;
+      padding-bottom: 13px;
     }
   }
 }
@@ -228,6 +274,21 @@
       margin-bottom: 42px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 337px;
+
+    &--contacts {
+      min-width: 374px;
+    }
+
+    &--textarea {
+      min-width: 820px;
+      margin-top: 23px;
+      min-height: 127px;
+      margin-bottom: 34px;
+    }
+  }
 }
 
 
@@ -238,6 +299,11 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &--radio {
@@ -263,6 +329,37 @@
     padding-left: 58px;
   }
 
+  @media (min-width: @desktop-width) {
+    padding-left: 58px;
+
+    &--shark {
+      order: 1;
+    }
+
+    &--beach {
+      order: 4;
+    }
+
+    &--norris {
+      order: 2;
+    }
+
+    &--souvenirs {
+      order: 5;
+      padding-left: 96px;
+    }
+
+    &--tower {
+      order: 3;
+      padding-left: 52px;
+    }
+
+    &--hotel {
+      order: 6;
+      padding-left: 62px;
+    }
+  }
+
   &--radio {
     margin: 0;
     padding-top: 35px;
@@ -270,6 +367,11 @@
     @media (min-width: @tablet-width) {
       padding-top: 34px;
       padding-left: 58px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 35px;
+      padding-left: 73px;
     }
   }
 }
@@ -283,8 +385,20 @@
     color: #d22856;
   }
 
+  &--view {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     padding-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 4px;
+
+    &--view {
+      display: inline-block;
+    }
   }
 }
 
