@@ -36,12 +36,28 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price-list__rate {
   font-size: 24px;
   font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
 .price-list__body {
@@ -102,11 +118,30 @@
 .price-list-table-wrapper {
   overflow: auto;
   margin: 30px auto;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 92px;
+    margin-bottom: 19px;
+  }
 }
 
 .price-list-table {
   border-collapse: collapse;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    max-width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+  }
 }
 
 .price-list-table__row th:first-child,
@@ -120,15 +155,46 @@
   background: #283645;
   border: 2px solid #e5e5e5;
   color: #ffffff;
-  padding: 20px;
+  padding: 14px;
   min-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 130px;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 14px;
+  }
 }
 
 .price-list-table__td {
   background: #ffffff;
   border: 2px solid #e5e5e5;
-  padding: 20px;
+  padding: 15px;
+  padding-left: 22px;
   min-width: 280px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    min-width: 100px;
+    padding: 7px;
+    padding-right: 0;
+    padding-left: 15px;
+    font-size: 14px;
+    text-transform: none;
+    vertical-align: middle;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding: 15px;
+    padding-right: 0;
+    padding-left: 21px;
+    max-width: 130px;
+  }
 }
 
 .price-list-table__td-content {
@@ -144,6 +210,10 @@
     background-repeat: no-repeat;
     width: 27px;
     height: 26px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0 auto;
+    }
   }
 
   &--yes {
@@ -151,5 +221,15 @@
     background-repeat: no-repeat;
     width: 21px;
     height: 16px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.price-list-table__atribute {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
