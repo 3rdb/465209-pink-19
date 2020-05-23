@@ -14,16 +14,50 @@
   margin-top: 45px;
   text-align: center;
 
-  @media (min-width: @tablet-width) {
-    font-size: 18px;
-    margin-top: 90px;
-    padding-left: 91px;
-    padding-right: 91px;
+  @media (min-width: @desktop-width) {
+    max-width: 571px;
+    margin: 0 auto;
+    margin-top: 93px;
+    padding: 0;
   }
 
-  @media (min-width: @desktop-width) {
-    max-width: 630px;
-    margin-left: 194px;
-    margin-top: 93px;
+  &--view {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: inline-block;
+    }
+  }
+
+  &--form {
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 90px;
+      padding-left: 35px;
+      padding-right: 35px;
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+      max-width: 840px;
+    }
+  }
+
+  &--gallery {
+    @media (min-width: @tablet-width) {
+      margin-top: 90px;
+      padding-left: 91px;
+      padding-right: 91px;
+      font-size: 18px;
+    }
   }
 }

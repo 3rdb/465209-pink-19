@@ -2,11 +2,18 @@
   .no-list();
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
+  max-width: 194px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__item {
-  margin-right: 45px;
+  nmargin: 0 auto;
 
   @media (min-width: @tablet-width) {
     margin-right: 12px;

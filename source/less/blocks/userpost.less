@@ -1,13 +1,50 @@
 .userpost {
   background-color: #f2f2f2;
-  height: 935px;
-  /* Для первой части задания. Для удобства пикселя. Потом сделаю нормально. */
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #ffffff;
   }
 }
 
 .userpost__wrapper {
   text-align: center;
+  padding-top: 18px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 37px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 37px;
+    padding-left: 80px;
+  }
+}
+
+.userpost__image {
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+  }
+}
+
+.userpost__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 940px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding-bottom: 47px;
+  }
 }

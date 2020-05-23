@@ -27,6 +27,11 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position-y: -66px;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: none;
   }
