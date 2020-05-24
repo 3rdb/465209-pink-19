@@ -23,7 +23,19 @@
   cursor: pointer;
 
   svg {
-    fill: #d22856;
+    fill: #b5b9be;
+
+    @media (min-width: @tablet-width) {
+      fill: #d22856;
+    }
+
+    &:hover {
+      fill: #8d949b;
+    }
+
+    &:active {
+      fill: #d22856;
+    }
   }
 
   &--crop {
@@ -140,6 +152,7 @@
     display: flex;
     align-items: center;
     min-width: 270px;
+    border-bottom: 1px solid #e5e5e5;
   }
 
   @media (min-width: @desktop-width) {
@@ -240,6 +253,17 @@
   background-color: transparent;
   border: 3px solid #d22856;
   border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     width: 260px;
@@ -256,5 +280,19 @@
     color: #283645;
     border-color: #283645;
     opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+      border: solid 3px #283645;
+      background-color: #f2f2f2;
+      color: #283645;
+    }
+
+    &:active {
+      opacity: 0.3;
+      border: solid 3px #283645;
+      background-color: #283645;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }

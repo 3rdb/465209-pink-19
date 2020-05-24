@@ -45,7 +45,7 @@
   @media (min-width: @desktop-width) {
     max-width: 211px;
     margin: 0 auto;
-    margin-bottom: 31px;
+    margin-bottom: 0;
 
     &--phone {
       order: 1;
@@ -81,6 +81,18 @@
   font-weight: 300;
   text-decoration: none;
   text-align: center;
+
+  &--email {
+    &:hover {
+      color: #283645;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: #bec2c7;
+      text-decoration: none;
+    }
+  }
 }
 
 .contacts__map {
@@ -112,7 +124,7 @@
   @media (min-width: @desktop-width) {
     iframe {
       width: 100%;
-      max-height: 473px;
+      max-height: 507px;
     }
   }
 }
