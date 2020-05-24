@@ -18,6 +18,10 @@
     @media (min-width: @tablet-width) {
       bottom: -228px;
     }
+
+    @media (min-width: @desktop-width) {
+      bottom: -379px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -27,7 +31,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 167px;
+    padding-top: 132px;
+    margin-top: 34px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 21%;
   }
 }
 
@@ -37,4 +45,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
