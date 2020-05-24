@@ -94,7 +94,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 66px;
+    padding-top: 100px;
     padding-bottom: 92px;
     margin-bottom: 19px;
   }
@@ -203,10 +203,12 @@
 
 .price-list-table__value {
   &--no {
-    background-image: url("../img/icon-no.svg");
-    background-repeat: no-repeat;
     width: 27px;
     height: 26px;
+
+    svg {
+      fill: #f25b26;;
+    }
 
     @media (min-width: @tablet-width) {
       margin: 0 auto;
@@ -214,10 +216,12 @@
   }
 
   &--yes {
-    background-image: url("../img/icon-yes.svg");
-    background-repeat: no-repeat;
     width: 21px;
     height: 16px;
+
+    svg {
+      fill: #3dc644;
+    }
 
     @media (min-width: @tablet-width) {
       margin: 0 auto;

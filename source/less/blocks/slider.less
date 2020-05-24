@@ -21,4 +21,37 @@
 
 .slider__toggles {
   display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.slider__toggle-arrow {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding: 0;
+    position: absolute;
+    top: 25px;
+    width: 22px;
+    height: 41px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+
+    &--left {
+      left: 0;
+      top: 47px;
+    }
+
+    &--right {
+      right: 0;
+      top: 47px;
+    }
+  }
 }
