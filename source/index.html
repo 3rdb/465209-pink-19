@@ -28,7 +28,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list nav-list">
               <li class="nav-list__item">
-                <a class="nav-list__link">Главная</a>
+                <a class="nav-list__link nav-list__link--active">Главная</a>
               </li>
               <li class="nav-list__item">
                 <a class="nav-list__link" href="photo.html">Фотографии</a>
@@ -101,7 +101,7 @@
           <p class="offers__title">Нам есть, что вам предложить!</p>
         </div>
       </div>
-      <div class="container">
+      <div class="container container__offers">
         <div class="offers__wrapper">
           <ul class="main__list offers-list">
             <li class="offers-list__item">
@@ -110,7 +110,7 @@
             </li>
             <li class="offers-list__item">
               <b class="offers-list__slogan">Меняет мир вокруг</b>
-              <p class="offers-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="offers-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
             </li>
             <li class="offers-list__item">
               <b class="offers-list__slogan">Заводит новых друзей</b>
@@ -161,82 +161,6 @@
     <section class="price">
       <div class="container">
         <div class="price__wrapper slider">
-          <!-- <ul class="price-list">
-            <li class="price-list__item price-list__item--headings slider__item">
-              <div class="price-list__body">
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Розовый фильтр</div>
-                </div>
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Смайлики</div>
-                </div>
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Комментарии</div>
-                </div>
-              </div>
-            </li>
-            <li class="price-list__item slider__item">
-              <div class="price-list__header price__header">
-                <h3 class="price-list__title">База</h3>
-                <span class="price-list__rate">1,99 USD</span>
-              </div>
-              <div class="price-list__body">
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Розовый фильтр</div>
-                  <div class="price-list__value price__value--yes"></div>
-                </div>
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Смайлики</div>
-                  <div class="price-list__value price__value--no"></div>
-                </div>
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Комментарии</div>
-                  <div class="price-list__value price__value--no"></div>
-                </div>
-              </div>
-            </li>
-            <li class="price-list__item price-list__item--show slider__item">
-              <div class="price-list__header price__header--hit">
-                <h3 class="price-list__title">Стандарт</h3>
-                <span class="price-list__rate">3,99 USD</span>
-              </div>
-              <div class="price-list__body">
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Розовый фильтр</div>
-                  <div class="price-list__value price__value--yes"></div>
-                </div>
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Смайлики</div>
-                  <div class="price-list__value price__value--yes"></div>
-                </div>
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Комментарии</div>
-                  <div class="price-list__value price__value--no"></div>
-                </div>
-              </div>
-            </li>
-            <li class="price-list__item slider__item">
-              <div class="price-list__header price__header">
-                <h3 class="price-list__title">Анлим</h3>
-                <span class="price-list__rate">9,99 USD</span>
-              </div>
-              <div class="price-list__body">
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Розовый фильтр</div>
-                  <div class="price-list__value price__value--yes"></div>
-                </div>
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Смайлики</div>
-                  <div class="price-list__value price__value--yes"></div>
-                </div>
-                <div class="price-list__row">
-                  <div class="price-list__atribute">Комментарии</div>
-                  <div class="price-list__value price__value--yes"></div>
-                </div>
-              </div>
-            </li>
-          </ul>
- -->
           <div class="price-list-table-wrapper">
             <table class="price-list-table">
               <thead>
@@ -246,7 +170,7 @@
                     <h3 class="price-list__title">База</h3>
                     <span class="price-list__rate">1,99 USD</span>
                   </th>
-                  <th class="price-list-table__th">
+                  <th class="price-list-table__th price-list-table__th--hit">
                     <h3 class="price-list__title">Стандарт</h3>
                     <span class="price-list__rate">3,99 USD</span>
                   </th>
@@ -331,7 +255,7 @@
 
           <p class="price__toggles slider__toggles">
             <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--active" type="button"></button>
             <button class="slider__toggle" type="button"></button>
           </p>
         </div>

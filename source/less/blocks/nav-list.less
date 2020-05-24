@@ -42,8 +42,30 @@
   text-align: center;
 
   @media (min-width: @desktop-width) {
+    position: relative;
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
+
+    &--active::before {
+      content: "";
+      position: absolute;
+      display: block;
+      padding-top: 15px;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-bottom: 2px solid #fff;
+    }
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &--active:hover:before {
+      border-bottom: 2px solid #d22856;
+      color: #d22856;
+    }
   }
 }

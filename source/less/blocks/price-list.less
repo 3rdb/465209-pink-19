@@ -82,45 +82,15 @@
   }
 }
 
-.price__value--no {
-  position: absolute;
-  background-image: url("../img/icon-no.svg");
-  background-repeat: no-repeat;
-  width: 27px;
-  height: 26px;
-  bottom: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 19px;
-}
 
-.price__value--yes {
-  position: absolute;
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  width: 21px;
-  height: 16px;
-  bottom: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 19px;
-}
-
-.price__toggles {
-  text-align: center;
-  padding-bottom: 55px;
-}
-
-.price .container {
-  padding: 0;
-}
 
 .price-list-table-wrapper {
   overflow: auto;
   margin: 30px auto;
 
   @media (min-width: @tablet-width) {
-    padding-top: 70px;
+    padding-top: 72px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -155,8 +125,35 @@
   background: #283645;
   border: 2px solid #e5e5e5;
   color: #ffffff;
-  padding: 14px;
+  padding: 15px;
   min-width: 280px;
+
+  &--hit {
+    position: relative;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/bg-hit-tablet.svg");
+    }
+
+    &::before {
+      content: "хит";
+      position: absolute;
+      left: 9px;
+      top: 12px;
+      transform: rotate(-45deg);
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 400;
+
+      @media (min-width: @tablet-width) {
+        left: 8px;
+        top: 7px;
+      }
+    }
+  }
 
   @media (min-width: @tablet-width) {
     min-width: 130px;

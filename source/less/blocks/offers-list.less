@@ -6,8 +6,7 @@
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
-    width: 390px;
-    margin-top: 80px;
+    margin-top: 81px;
   }
 
   @media (min-width: @desktop-width) {
@@ -26,6 +25,10 @@
 
   @media (min-width: @tablet-width) {
     text-align: left;
+
+    &:last-child {
+      padding-bottom: 8px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -43,6 +46,10 @@
   margin: 0 auto;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
@@ -52,7 +59,8 @@
 
 .offers-list__text {
   margin: 0;
-  padding: 10px 30px 30px;
+  padding-top: 10px;
+  margin-bottom: 30px;
   text-align: center;
   color: #283645;
   font-size: 14px;
