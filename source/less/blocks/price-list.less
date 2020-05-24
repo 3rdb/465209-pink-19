@@ -168,6 +168,7 @@
 }
 
 .price-list-table__td {
+  position: relative;
   background: #ffffff;
   border: 2px solid #e5e5e5;
   padding: 15px;
@@ -203,28 +204,47 @@
 
 .price-list-table__value {
   &--no {
-    width: 27px;
-    height: 26px;
+    position: absolute;
+    width: 21px;
+    height: 16px;
+    right: 26px;
+    bottom: 29px;
 
     svg {
       fill: #f25b26;;
     }
 
     @media (min-width: @tablet-width) {
-      margin: 0 auto;
+      right: 44%;
+      bottom: 50%;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 47%;
     }
   }
 
   &--yes {
+    position: absolute;
     width: 21px;
     height: 16px;
+    right: 27px;
+    bottom: 25px;
 
     svg {
+      width: 30px;
+      height: 25px;
       fill: #3dc644;
     }
 
     @media (min-width: @tablet-width) {
-      margin: 0 auto;
+      right: 45%;
+      bottom: 50%
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 47%;
+      bottom: 43%;
     }
   }
 }
