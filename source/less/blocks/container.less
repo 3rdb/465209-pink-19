@@ -11,6 +11,7 @@
 
 .container-low {
   position: relative;
+  padding: 0;
 }
 
 .container__gallery {
@@ -29,6 +30,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 940px;
+    background-color: #f2f2f2;
+  }
+}
+
+.container__offers {
+  @media (min-width: @desktop-width) {
+    max-width: none;
+    width: 100%;
     background-color: #f2f2f2;
   }
 }
