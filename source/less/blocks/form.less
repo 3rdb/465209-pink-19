@@ -260,7 +260,7 @@
     margin-top: 15px;
     padding-top: 14px;
     line-height: 1.7;
-    resize: vertical
+    resize: vertical;
   }
 
   @media (min-width: @tablet-width) {
@@ -301,7 +301,21 @@
   }
 }
 
+.form__field-wrapper {
+  position: relative;
+}
 
+.form__field-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  background-color: #e5e5e5;
+  width: 63px;
+  height: 63px;
+}
 
 .form__options-list {
   .no-list();
@@ -415,11 +429,12 @@
 
 .form__checkbox + .form__label-checkbox:hover::before,
 .form__radiobutton + .form__label-radiobutton:hover::before {
-    border: 2px solid #283645;
+  border: 2px solid #283645;
 }
+
 .form__checkbox + .form__label-checkbox:active::before,
 .form__radiobutton + .form__label-radiobutton:active::before {
-    border: 2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 .form__checkbox {
