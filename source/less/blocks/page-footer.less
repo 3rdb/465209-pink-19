@@ -28,6 +28,12 @@
 
     @media (min-width: @tablet-width) {
       display: flex;
+      margin-top: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 61px;
+      max-width: 940px;
     }
   }
 }
@@ -74,5 +80,24 @@
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     margin-right: 0;
+  }
+}
+
+.page-footer__mobile {
+  svg {
+    width: 130px;
+    height: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
