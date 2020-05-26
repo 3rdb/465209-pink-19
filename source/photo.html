@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
   <div style="display:none">
@@ -18,8 +19,10 @@
             <svg class="page-header__tablet" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet"></use></svg>
             <svg class="page-header__desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop"></use></svg>
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <!--  main-nav--opened
+            main-nav--closed  -->
+        <nav class="main-nav js-nav main-nav--closed">
+          <button class="main-nav__toggle js-toggleMenu" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list nav-list">
               <li class="nav-list__item">
@@ -46,7 +49,7 @@
   <main class="page-content">
       <p class="page-content__description page-content__description--gallery">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <section class="gallery">
-        <article class="gallery-item gallery-item--panorama">
+        <div class="gallery-item gallery-item--panorama">
           <div class="gallery__item-photo">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
@@ -58,7 +61,7 @@
             <div class="gallery-item__info gallery-item__info--panorama">
               <div class="gallery-item__author">
                 <b class="gallery-item__name">Анна</b>
-                <time datetime="5M" class="gallery-item__time">(5 минут назад)</time>
+                <time datetime="2020-05-26T10:50:00" class="gallery-item__time">(5 минут назад)</time>
               </div>
               <p class="gallery-item__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <div class="gallery-item__like-block gallery-item__like-block--panorama">
@@ -68,12 +71,12 @@
                     </svg>
                 </span>
                 <span class="gallery-item__like-text">Нравится:</span>
-                <span class="gallery-item__like-count">&nbsp215</span>
+                <span class="gallery-item__like-count">&nbsp;215</span>
               </div>
           </div>
-        </article>
+        </div>
         <div class="container container__gallery">
-          <article class="gallery-item">
+          <div class="gallery-item">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
@@ -82,7 +85,7 @@
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Левон</b>
-                  <time datetime="5H" class="gallery-item__time">(5 часов назад)</time>
+                  <time datetime="2020-05-26T05:50:00" class="gallery-item__time">(5 часов назад)</time>
                 </div>
                 <p class="gallery-item__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <div class="gallery-item__like-block">
@@ -92,11 +95,11 @@
                       </svg>
                   </span>
                   <span class="gallery-item__like-text">Нравится:</span>
-                  <span class="gallery-item__like-count">&nbsp356</span>
+                  <span class="gallery-item__like-count">&nbsp;356</span>
                 </div>
             </div>
-          </article>
-          <article class="gallery-item">
+          </div>
+          <div class="gallery-item">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
@@ -105,7 +108,7 @@
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Антон</b>
-                  <time datetime="12H" class="gallery-item__time">(12 часов назад)</time>
+                  <time datetime="2020-05-25T22:50:00" class="gallery-item__time">(12 часов назад)</time>
                 </div>
                 <p class="gallery-item__message">Соседи будут рады!</p>
                 <div class="gallery-item__like-block">
@@ -115,11 +118,11 @@
                       </svg>
                   </span>
                   <span class="gallery-item__like-text">Нравится:</span>
-                  <span class="gallery-item__like-count">&nbsp666</span>
+                  <span class="gallery-item__like-count">&nbsp;666</span>
                 </div>
             </div>
-          </article>
-          <article class="gallery-item">
+          </div>
+          <div class="gallery-item">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
@@ -128,7 +131,7 @@
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Борис</b>
-                  <time datetime="20H" class="gallery-item__time">(20 часов назад)</time>
+                  <time datetime="2020-05-25T14:50:00" class="gallery-item__time">(20 часов назад)</time>
                 </div>
                 <p class="gallery-item__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <div class="gallery-item__like-block">
@@ -138,11 +141,11 @@
                       </svg>
                   </span>
                   <span class="gallery-item__like-text">Нравится:</span>
-                  <span class="gallery-item__like-count">&nbsp215</span>
+                  <span class="gallery-item__like-count">&nbsp;215</span>
                 </div>
             </div>
-          </article>
-          <article class="gallery-item">
+          </div>
+          <div class="gallery-item">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
@@ -151,7 +154,7 @@
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Сергей</b>
-                  <time datetime="25H" class="gallery-item__time">(25 часов назад)</time>
+                  <time datetime="2020-05-25T09:50:00" class="gallery-item__time">(25 часов назад)</time>
                 </div>
                 <p class="gallery-item__message">Самая кубанская в мире!</p>
                 <div class="gallery-item__like-block">
@@ -161,11 +164,11 @@
                       </svg>
                   </span>
                   <span class="gallery-item__like-text">Нравится:</span>
-                  <span class="gallery-item__like-count">&nbsp4</span>
+                  <span class="gallery-item__like-count">&nbsp;4</span>
                 </div>
             </div>
-          </article>
-          <article class="gallery-item">
+          </div>
+          <div class="gallery-item">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
@@ -174,7 +177,7 @@
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Максим</b>
-                  <time datetime="40H" class="gallery-item__time">(40 часов назад)</time>
+                  <time datetime="2020-05-24T18:50:00" class="gallery-item__time">(40 часов назад)</time>
                 </div>
                 <p class="gallery-item__message">Где снег-то?</p>
                 <div class="gallery-item__like-block">
@@ -184,11 +187,11 @@
                       </svg>
                   </span>
                   <span class="gallery-item__like-text">Нравится:</span>
-                  <span class="gallery-item__like-count">&nbsp150</span>
+                  <span class="gallery-item__like-count">&nbsp;150</span>
                 </div>
             </div>
-          </article>
-          <article class="gallery-item">
+          </div>
+          <div class="gallery-item">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
@@ -197,7 +200,7 @@
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Надежда</b>
-                  <time datetime="45H" class="gallery-item__time">(45 часов назад)</time>
+                  <time datetime="2020-05-24T13:50:00" class="gallery-item__time">(45 часов назад)</time>
                 </div>
                 <p class="gallery-item__message">Всем GM и взаимные лайки!</p>
                 <div class="gallery-item__like-block">
@@ -207,10 +210,10 @@
                     </svg>
                   </span>
                   <span class="gallery-item__like-text">Нравится:</span>
-                  <span class="gallery-item__like-count">&nbsp2560</span>
+                  <span class="gallery-item__like-count">&nbsp;2560</span>
                 </div>
             </div>
-          </article>
+          </div>
         </div>
     </section>
     <section class="userpost">

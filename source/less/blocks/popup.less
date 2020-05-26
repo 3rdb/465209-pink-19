@@ -1,11 +1,12 @@
 .popup {
   display: none;
   position: fixed;
-  bottom: 550px;
   text-align: center;
   background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding-top: 39px;
-  left: 0;
   width: 320px;
   height: 289px;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -14,25 +15,17 @@
   @media (min-width: @tablet-width) {
     width: 460px;
     height: 363px;
-    bottom: 500px;
     margin: 0 auto;
-    left: 15%;
   }
 
   @media (min-width: @desktop-width) {
     width: 780px;
     height: 363px;
-    left: 208px;
     padding-top: 32px;
   }
 
   &--sent {
     display: none;
-    bottom: 150px;
-
-    @media (min-width: @tablet-width) {
-      bottom: 50px;
-    }
   }
 }
 
@@ -84,6 +77,18 @@
   margin: 0 auto;
   min-width: 280px;
 
+  &:hover {
+    background: #1c9b5e;
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: @tablet-width) {
     min-width: 300px;
   }
@@ -94,6 +99,18 @@
 }
 
 .popup__button-ok {
+  &:hover {
+    background: #1c9b5e;
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: @tablet-width) {
     min-width: 300px;
   }
