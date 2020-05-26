@@ -38,12 +38,23 @@
   max-width: 280px;
   margin-bottom: 25px;
 
+  &--achivment {
+    max-width: 320px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+  }
+
   &--contacts {
     margin-top: 5px;
   }
 
   &--app {
     margin: 0;
+    max-width: 320px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
   }
 
   @media (min-width: @tablet-width) {
@@ -60,6 +71,9 @@
     &--achivment {
       order: 4;
       margin-top: 44px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
     }
 
     &--contacts {
@@ -69,6 +83,9 @@
     &--app {
       order: 2;
       margin-bottom: 60px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
     }
 
     &--textarea {
@@ -310,11 +327,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 2px;
   background-color: #e5e5e5;
-  width: 63px;
-  height: 63px;
+  width: 60px;
+  height: 60px;
+
+  svg {
+    fill: #d22856;
+  }
 }
 
 .form__options-list {
@@ -445,7 +466,7 @@
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url("../img/icon-yes.svg");
+    background-image: url("../img/icon-yes-form.svg");
     background-repeat: no-repeat;
     left: 10px;
     top: 10px;
