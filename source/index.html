@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" />
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" />
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" />
   <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
@@ -48,6 +51,9 @@
         <div class="download__wrapper">
           <h2 class="download__title">Взгляните на жизнь иначе!</h2>
           <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
             <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
             <img class="download__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение Pink">
@@ -57,21 +63,21 @@
         <ul class="download__list">
           <li class="download__item">
             <a href="https://www.apple.com/ru/ios/app-store/" class="download__link">
-              <svg width="46.21" height="56.753">
+              <svg width="46" height="56">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-apple"></use>
                 </svg>
             </a>
           </li>
           <li class="download__item">
             <a href="https://play.google.com/store" class="download__link">
-              <svg width="42.084" height="47.041">
+              <svg width="42" height="47">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-android"></use>
                 </svg>
             </a>
           </li>
           <li class="download__item">
             <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="download__link">
-              <svg width="43.922" height="41.992">
+              <svg width="44" height="42">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-microsoft"></use>
               </svg>
             </a>
@@ -106,9 +112,18 @@
             </li>
           </ul>
           <div class="offers__img">
-            <img class="offers__img-none" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x" alt="Телефон с скриншотом">
-            <img class="offers__img-none" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x" alt="Телефон с скриншотом">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+              <img class="offers__img-none" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x" alt="Телефон с скриншотом">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+              <img class="offers__img-none" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x" alt="Телефон с скриншотом">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Телефон с скриншотом">
@@ -138,12 +153,12 @@
             <b class="review__name">Николай Петров</b>
             <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             <button class="slider__toggle-arrow slider__toggle-arrow--left" type="button">
-              <svg width="21.706" height="41.719">
+              <svg width="22" height="42">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-review-arrow-left"></use>
               </svg>
             </button>
             <button class="slider__toggle-arrow slider__toggle-arrow--right" type="button">
-              <svg width="21.706" height="41.719">
+              <svg width="22" height="42">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-review-arrow-right"></use>
               </svg>
             </button>
@@ -185,7 +200,7 @@
                     <div class="price-list-table__td-content">
                       <div class="price-list-table__atribute">Розовый фильтр</div>
                       <div class="price-list-table__value price-list-table__value--yes">
-                        <svg width="21.698" height="16.09">
+                        <svg width="21" height="16">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                         </svg>
                       </div>
@@ -195,7 +210,7 @@
                     <div class="price-list-table__td-content">
                       <div class="price-list-table__atribute">Розовый фильтр</div>
                       <div class="price-list-table__value price-list-table__value--yes">
-                        <svg width="21.698" height="16.09">
+                        <svg width="21" height="16">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                         </svg>
                       </div>
@@ -205,7 +220,7 @@
                     <div class="price-list-table__td-content">
                       <div class="price-list-table__atribute">Розовый фильтр</div>
                       <div class="price-list-table__value price-list-table__value--yes">
-                        <svg width="21.698" height="16.09">
+                        <svg width="21" height="16">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                         </svg>
                       </div>
@@ -218,7 +233,7 @@
                     <div class="price-list-table__td-content">
                       <div class="price-list-table__atribute">Смайлики</div>
                       <div class="price-list-table__value price-list-table__value--no">
-                        <svg width="26.752" height="26.752">
+                        <svg width="26" height="26">
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
                         </svg>
                       </div>
@@ -228,7 +243,7 @@
                     <div class="price-list-table__td-content">
                       <div class="price-list-table__atribute">Смайлики</div>
                       <div class="price-list-table__value price-list-table__value--yes">
-                        <svg width="21.698" height="16.09">
+                        <svg width="21" height="16">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                         </svg>
                       </div>
@@ -238,7 +253,7 @@
                     <div class="price-list-table__td-content">
                       <div class="price-list-table__atribute">Смайлики</div>
                       <div class="price-list-table__value price-list-table__value--yes">
-                        <svg width="21.698" height="16.09">
+                        <svg width="21" height="16">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                         </svg>
                       </div>
@@ -251,7 +266,7 @@
                     <div class="price-list-table__td-content">
                       <div class="price-list-table__atribute">Комментарии</div>
                       <div class="price-list-table__value price-list-table__value--no">
-                        <svg width="26.752" height="26.752">
+                        <svg width="26" height="26">
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
                         </svg>
                       </div>
@@ -261,7 +276,7 @@
                     <div class="price-list-table__td-content">
                       <div class="price-list-table__atribute">Комментарии</div>
                       <div class="price-list-table__value price-list-table__value--no">
-                        <svg width="26.752" height="26.752">
+                        <svg width="26" height="26">
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
                         </svg>
                       </div>
@@ -271,7 +286,7 @@
                     <div class="price-list-table__td-content">
                       <div class="price-list-table__atribute">Комментарии</div>
                       <div class="price-list-table__value price-list-table__value--yes">
-                        <svg width="21.698" height="16.09">
+                        <svg width="21" height="16">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                         </svg>
                       </div>
@@ -332,7 +347,7 @@
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com">
               <span class="visually-hidden">Твитер</span>
-              <svg width="17.5" height="14.663">
+              <svg width="17" height="14">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
               </svg>
             </a>
@@ -340,7 +355,7 @@
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://facebook.com">
               <span class="visually-hidden">Фейсбуке</span>
-              <svg width="17.5" height="14.663">
+              <svg width="17" height="14">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
               </svg>
             </a>
@@ -348,7 +363,7 @@
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://youtube.com">
               <span class="visually-hidden">Youtube</span>
-              <svg width="17.5" height="14.663">
+              <svg width="17" height="14">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
               </svg>
             </a>
@@ -359,7 +374,7 @@
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Html Academy</span>
-          <svg width="26.943" height="34.09">
+          <svg width="27" height="34">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>

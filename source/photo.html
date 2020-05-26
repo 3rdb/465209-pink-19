@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" />
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" />
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" />
   <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
@@ -51,11 +54,16 @@
       <section class="gallery">
         <div class="gallery-item gallery-item--panorama">
           <div class="gallery__item-photo">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="gallery__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Вид с фуникулера на горы">
-              </picture>
+            <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Вид с фуникулера на горы">
+                </picture>
+              </a>
               <span class="gallery__item-marker">панорама дня</span>
             </div>
             <div class="gallery-item__info gallery-item__info--panorama">
@@ -66,7 +74,7 @@
               <p class="gallery-item__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <div class="gallery-item__like-block gallery-item__like-block--panorama">
                 <span class="gallery-item__like-heart gallery-item__like-heart--panorama">
-                  <svg width="12.545" height="11.99">
+                  <svg width="12" height="12">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                     </svg>
                 </span>
@@ -75,13 +83,18 @@
               </div>
           </div>
         </div>
-        <div class="container container__gallery">
+        <div class="container container-gallery">
           <div class="gallery-item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото камеры снимающей машину">
-              </picture>
+            <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото камеры снимающей машину">
+                </picture>
+              </a>
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Левон</b>
@@ -90,7 +103,7 @@
                 <p class="gallery-item__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <div class="gallery-item__like-block">
                   <span class="gallery-item__like-heart">
-                    <svg width="12.545" height="11.99">
+                    <svg width="12" height="12">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                       </svg>
                   </span>
@@ -100,11 +113,16 @@
             </div>
           </div>
           <div class="gallery-item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото барабанной установки">
-              </picture>
+            <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото барабанной установки">
+                </picture>
+              </a>
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Антон</b>
@@ -113,7 +131,7 @@
                 <p class="gallery-item__message">Соседи будут рады!</p>
                 <div class="gallery-item__like-block">
                   <span class="gallery-item__like-heart">
-                    <svg width="12.545" height="11.99">
+                    <svg width="12" height="12">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                       </svg>
                   </span>
@@ -123,11 +141,16 @@
             </div>
           </div>
           <div class="gallery-item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фото неба через стеклянную крышу">
-              </picture>
+            <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фото неба через стеклянную крышу">
+                </picture>
+              </a>
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Борис</b>
@@ -136,7 +159,7 @@
                 <p class="gallery-item__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <div class="gallery-item__like-block">
                   <span class="gallery-item__like-heart">
-                    <svg width="12.545" height="11.99">
+                    <svg width="12" height="12">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                       </svg>
                   </span>
@@ -146,11 +169,16 @@
             </div>
           </div>
           <div class="gallery-item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фотографии рынка">
-              </picture>
+            <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фотографии рынка">
+                </picture>
+              </a>
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Сергей</b>
@@ -159,7 +187,7 @@
                 <p class="gallery-item__message">Самая кубанская в мире!</p>
                 <div class="gallery-item__like-block">
                   <span class="gallery-item__like-heart">
-                    <svg width="12.545" height="11.99">
+                    <svg width="12" height="12">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                       </svg>
                   </span>
@@ -169,11 +197,16 @@
             </div>
           </div>
           <div class="gallery-item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фото с холма">
-              </picture>
+            <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фото с холма">
+                </picture>
+              </a>
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Максим</b>
@@ -182,7 +215,7 @@
                 <p class="gallery-item__message">Где снег-то?</p>
                 <div class="gallery-item__like-block">
                   <span class="gallery-item__like-heart">
-                    <svg width="12.545" height="11.99">
+                    <svg width="12" height="12">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                       </svg>
                   </span>
@@ -192,11 +225,16 @@
             </div>
           </div>
           <div class="gallery-item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фото из илюминатора самолета">
-              </picture>
+            <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фото из илюминатора самолета">
+                </picture>
+              </a>
               <div class="gallery-item__info">
                 <div class="gallery-item__author">
                   <b class="gallery-item__name">Надежда</b>
@@ -205,7 +243,7 @@
                 <p class="gallery-item__message">Всем GM и взаимные лайки!</p>
                 <div class="gallery-item__like-block">
                   <span class="gallery-item__like-heart">
-                    <svg width="12.545" height="11.99">
+                    <svg width="12" height="12">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use>
                     </svg>
                   </span>
@@ -223,11 +261,16 @@
       </div>
       <div class="userpost__container">
         <div class="userpost__wrapper">
+          <a href="">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-            <img class="userpost__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото зимней дороги">
-          </picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="userpost__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото зимней дороги">
+            </picture>
+          </a>
         </div>
         <div class="userpost-options">
           <div class="userpost-options__container">
@@ -249,7 +292,7 @@
             </div>
             <div class="userpost-options__wrapper-editor">
               <button type="button" class="userpost-options__item userpost-options__item--contrast">
-                <svg width="31.92" height="31.92">
+                <svg width="32" height="32">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-contrast"></use>
                 </svg>
               </button>
@@ -265,7 +308,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer page-footer__gallery">
+  <footer class="page-footer page-footer--gallery">
     <div class="page-footer__logo">
       <svg class="page-footer__mobile" width="146" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use></svg>
         <svg class="page-footer__desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-desktop"></use></svg>
@@ -275,7 +318,7 @@
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com">
               <span class="visually-hidden">Твитер</span>
-              <svg width="17.5" height="14.663">
+              <svg width="17" height="14">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
               </svg>
             </a>
@@ -283,7 +326,7 @@
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://facebook.com">
               <span class="visually-hidden">Фейсбуке</span>
-              <svg width="17.5" height="14.663">
+              <svg width="17" height="14">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
               </svg>
             </a>
@@ -291,7 +334,7 @@
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://youtube.com">
               <span class="visually-hidden">Youtube</span>
-              <svg width="17.5" height="14.663">
+              <svg width="17" height="14">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
               </svg>
             </a>
@@ -302,7 +345,7 @@
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Html Academy</span>
-          <svg width="26.943" height="34.09">
+          <svg width="27" height="34">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
