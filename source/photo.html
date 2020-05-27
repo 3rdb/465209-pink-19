@@ -51,7 +51,7 @@
   </div>
   <main class="page-content">
       <p class="page-content__description page-content__description--gallery">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <section class="gallery">
+      <div class="gallery">
         <div class="gallery-item gallery-item--panorama">
           <div class="gallery__item-photo">
             <a href="">
@@ -83,7 +83,7 @@
               </div>
           </div>
         </div>
-        <div class="container container-gallery">
+        <div class="container container--gallery">
           <div class="gallery-item">
             <a href="">
                 <picture>
@@ -253,8 +253,8 @@
             </div>
           </div>
         </div>
-    </section>
-    <section class="userpost">
+    </div>
+    <div class="userpost">
       <div class="userpost-header">
         <p class="userpost-header__title">Затмите их всех!</p>
         <p class="userpost-header__text">Выкладывайте все, что накопилось в телефоне!</p>
@@ -280,7 +280,7 @@
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-crop"></use>
                 </svg>
               </button>
-              <div class="userpost-options__range userpost-options__range--crop"></div>
+              <div class="userpost-options__range userpost-options__range--crop" aria-label="Регулировка выреза фотографии"></div>
             </div>
             <div class="userpost-options__wrapper-editor">
               <button type="button" class="userpost-options__item userpost-options__item--fill">
@@ -288,7 +288,7 @@
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-fill"></use>
                 </svg>
               </button>
-              <div class="userpost-options__range userpost-options__range--fill"></div>
+              <div class="userpost-options__range userpost-options__range--fill" aria-label="Регулировка уровня заливки"></div>
             </div>
             <div class="userpost-options__wrapper-editor">
               <button type="button" class="userpost-options__item userpost-options__item--contrast">
@@ -296,17 +296,17 @@
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-contrast"></use>
                 </svg>
               </button>
-              <div class="userpost-options__range userpost-options__range--contrast"></div>
+              <div class="userpost-options__range userpost-options__range--contrast" aria-label="Регулировка уровня контрастности"></div>
             </div>
           </div>
-          <div class="userpost-options__range userpost-options__range--mobile"></div>
+          <div class="userpost-options__range userpost-options__range--mobile" aria-label="Регулировка уровня функций"></div>
           <div class="userpost-options__wrapper">
             <button type="button" class="button userpost-options__button">Запостить</button>
             <button type="button" class="button userpost-options__button userpost-options__button--disabled" disabled="">Отмена</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
   <footer class="page-footer page-footer--gallery">
     <div class="page-footer__logo">

@@ -459,8 +459,6 @@
 }
 
 .form__checkbox {
-  display: none;
-
   &:checked ~ .form__label-checkbox::after {
     position: absolute;
     content: "";
@@ -495,9 +493,11 @@
   }
 }
 
-.form__radiobutton {
-  display: none;
+.form__checkbox:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
 
+.form__radiobutton {
   &:checked ~ .form__label-radiobutton::after {
     position: absolute;
     content: "";
@@ -508,6 +508,10 @@
     left: 12px;
     top: 13px;
   }
+}
+
+.form__radiobutton:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .form__label-radiobutton {
